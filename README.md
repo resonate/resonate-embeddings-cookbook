@@ -3,7 +3,23 @@
 
 This repository contains code examples for running machine learning models using Resonate Embeddings as features. It includes examples for training models with optuna and scikit-learn.
 
+## Overview
+
+Embeddings or Embedding Vectors or Vector Embeddings are mathematical representations of a large data set in a meaningful and condensed form. They preserve the patterns and relationships within the data to make it easier for AI to process, understand, and deliver outcomes.
+Resonate Embeddings are a compressed, efficient data set of 90 days deterministic digital footprint outside of your firewalls. It’s provided at an individual level, in a secure, privacy-safe solution. Resonate’s Embeddings are proven to be highly predictive of consumers’ future behavior.
+Resonate’s data base is representative of the entire U.S. consumers’ past and present.
+Your team will take Resonate Embeddings, Layer on First-Party data, and create Specialist Model Outputs to drive accuracy and additional scale.
+
+![./imgs/embedding01.png](./imgs/embedding01.png)
+![./imgs/embedding02.png](./imgs/embedding02.png)
+
 ## Getting Started
+
+Inside Resonate's AI (rAI) are a series of models - the Resonate Consumer Behavioral Foundation Model and Resonate Elements Specialist Model. The inputs to the Resonate Consumer Behavioral Foundation Model are vast sums of behavioral, demographic and identity data. We use the embeddings in neural networks, gradient boosting, segmentation, etc.
+Resonate Embeddings become an additional input for your various specialist models. Using the cookbook codes provided here, you'll find they're easily incorporated into all Machine Learning algorithms.
+
+![./imgs/embedding03.png](./imgs/embedding03.png)
+![./imgs/embedding04.png](./imgs/embedding04.png)
 
 ### Prerequisites
 
