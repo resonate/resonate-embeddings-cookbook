@@ -14,13 +14,16 @@ from xgboost import XGBClassifier
 
 logger = structlog.get_logger()
 
-def preprocessing_data(input_path: str, embeddings_path: str):
+
+def preprocessing_evkey_data(input_path: str, embeddings_path: str, evkey: str):
     """
-    Preprocessing for training data
+    Preprocessing for evkey data
     :param input_path: location of the input label matrix
     :param embeddings_path: location of the embeddings
-    :return training inputs:
+    :param evkey: evkey to be processed
+    :return: training inputs
     """
+    evkey = 'evkey2={}'.format(evkey)
     logger.info('Input paths:', path=input_path, path2=embeddings_path)
     input_path = os.path.join(input_path, evkey)
     logger.info('loading evkey data from path', path=input_path)
