@@ -1,12 +1,13 @@
 
 # Embeddings Cookbook
 
-This repository contains code examples for running machine learning models using Resonate Embeddings as features. It includes examples for training models with optuna and scikit-learn. It does not include any data.
+This repository contains code examples for running machine learning models using Resonate Embeddings as features. It includes examples for training models with optuna and scikit-learn. We find that appropriate hyperparameter tuning is necessary to work with these data successfully, so we recommend adopting these patterns within your own stack.
+This repository does not include any data.
 
 ## Overview
 
 Resonate embeddings are a synthesis of up to 90 days of online behavior made available at the individual level. 
-These embeddings are used to improve the prediction and separation within your models.
+These embeddings may be used in isolation or in tandome with first party datasets, are may improve the predictive quality of your models, as well as their scale.
 
 ## Getting Started
 
