@@ -5,10 +5,9 @@ This repository contains code examples for running machine learning models using
 
 ## Overview
 
-Embeddings or Embedding Vectors or Vector Embeddings are mathematical representations of a large data set in a meaningful and condensed form. They preserve the patterns and relationships within the data to make it easier for AI to process, understand, and deliver outcomes.
+Embeddings or Embedding Vectors or Vector Embeddings are mathematical representations of a large data set in a meaningful and condensed form that are produced by neural networks. They preserve the patterns and relationships within the data to make it easier for AI to process, understand, and deliver outcomes.
 Resonate Embeddings are a compressed, efficient data set of 90 days deterministic digital footprint outside of your firewalls. It’s provided at an individual level, in a secure, privacy-safe solution. Resonate’s Embeddings are proven to be highly predictive of consumers’ future behavior.
-Resonate’s data base is representative of the entire U.S. consumers’ past and present.
-Your team will take Resonate Embeddings, Layer on First-Party data, and create Specialist Model Outputs to drive accuracy and additional scale.
+Other data science teams may use Resonate Embeddings, perhaps in conjunction with their own 1st Party Data, and develop specialized ML models to drive accuracy and additional scale.
 
 ![./imgs/embedding01.png](./imgs/embedding01.png)
 ![./imgs/embedding02.png](./imgs/embedding02.png)
