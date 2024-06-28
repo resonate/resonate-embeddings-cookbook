@@ -1,7 +1,7 @@
 
 # Embeddings Cookbook
 
-This repository contains code examples for running machine learning models using Resonate Embeddings as features. It includes examples for training models with optuna and scikit-learn.
+This repository contains code examples for running machine learning models using Resonate Embeddings as features. It includes examples for training models with optuna and scikit-learn. It does not include any data.
 
 ## Overview
 
