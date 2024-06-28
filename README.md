@@ -15,8 +15,8 @@ Your team will take Resonate Embeddings, Layer on First-Party data, and create S
 
 ## Getting Started
 
-Inside Resonate's AI (rAI) are a series of models - the Resonate Consumer Behavioral Foundation Model and Resonate Elements Specialist Model. The inputs to the Resonate Consumer Behavioral Foundation Model are vast sums of behavioral, demographic and identity data. We use the embeddings in neural networks, gradient boosting, segmentation, etc.
-Resonate Embeddings become an additional input for your various specialist models. Using the cookbook codes provided here, you'll find they're easily incorporated into all Machine Learning algorithms.
+Inside Resonate's AI (rAI) are a series of models - the Resonate Consumer Behavioral Foundation Model and Resonate Elements Specialist Model. The inputs to the Resonate Consumer Behavioral Foundation Model are vast sums of behavioral, demographic and identity data. We use these embeddings in other models that are neural networks, gradient boosting, segmentation, etc.
+Resonate Embeddings may be used as an additional input for your own internal ML models. This repository contains useful code for getting started with a variety of familiar ML models and processes. You'll find they're easily incorporated into all Machine Learning algorithms.
 
 ![./imgs/embedding03.png](./imgs/embedding03.png)
 ![./imgs/embedding04.png](./imgs/embedding04.png)
