@@ -1,7 +1,8 @@
 
 # Embeddings Cookbook
 
-This repository contains code examples for running machine learning models using Resonate Embeddings as features. It includes examples for training models with optuna and scikit-learn. We find that appropriate hyperparameter tuning is necessary to work with these data successfully, so we recommend adopting these patterns within your own stack.
+This repository contains code examples for running machine learning models using Resonate Embeddings as features. Embeddings are type of dimensionality reduction performed by large neural networks that capture key features of raw dataset in a manner that makes them more useful for other machine learning models, including other neural networks, recommender systems, gradient boosting, and segmentation. Embeddings are often easier to work with than raw data, particularly in the realm of consumer behaviors, because they are lower dimensional and dense.
+This respository includes examples for training models with optuna and scikit-learn. We find that appropriate hyperparameter tuning is necessary to work with these data successfully, so we recommend adopting these patterns within your own stack.
 This repository does not include any data.
 
 ## Overview
