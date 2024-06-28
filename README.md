@@ -70,15 +70,15 @@ python -m sklearn_cookbook.train_sklearn \
 
 ### Input Path
 
-This file contains the label matrix for a binary classification model. The schema for this file is:
+This is a parquet file that contains the label matrix for a binary classification model. The schema for this file is:
 
 - `rid`: ID for each data point.
 - `evkey`: A model identifier to facilitate good governance of experiments and model use cases.
-- `label`: Binary label indicating whether there was churn or not.
+- `label`: Binary label indicating the outcome for the observation (e.g., this record churned or did not churn).
 
 ### Embeddings Path
 
-This file contains the embeddings for a set of rids. The schema for this file is:
+This is a parquet file that contains the embeddings for a set of rids. The schema for this file is:
 
 - `rid`: ID for each data point.
 - `bottleneck`: 512-dimension embedding vector as a numpy array.
