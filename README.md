@@ -1,7 +1,7 @@
 
 # Embeddings Cookbook
 
-This repository contains code examples for running machine learning models using Resonate Embeddings as features. It includes examples for training models with LightGBM and scikit-learn.
+This repository contains code examples for running machine learning models using Resonate Embeddings as features. It includes examples for training models with optuna and scikit-learn.
 
 ## Getting Started
 
@@ -9,7 +9,6 @@ This repository contains code examples for running machine learning models using
 
 Ensure you have the following Python packages installed:
 
-- lightgbm
 - sklearn
 - optuna (for hyperparameter optimization)
 - Any other dependencies required by your scripts
@@ -50,16 +49,16 @@ python -m sklearn_cookbook.train_sklearn \
 - `embeddings_path`: Path to the embeddings (local or S3), containing IDs and N-dimensional embeddings.
 - `output_path`: Path to write the output data (local or S3).
 - `evkey`: An example key, e.g., `E205932615`. This is a model identifier and needed for record keeping.
-- `evaluations`: Number of evaluations for Optuna (e.g., 150, but can be higher or lower).
+- `evaluations`: Number of evaluations for Optuna to explore the hyperparameter space (e.g., 150, but can be higher or lower).
 
 ## Input Requirements
 
 ### Input Path
 
-This file contains the data for generating true churn predictions. The schema for this file is:
+This file contains the label matrix for a binary classification model. The schema for this file is:
 
 - `rid`: ID for each data point.
-- `evkey`: Evkey for each data point.
+- `evkey`: A model identifier to facilitate good governance of experiments and model use cases.
 - `label`: Binary label indicating whether there was churn or not.
 
 ### Embeddings Path
@@ -75,4 +74,4 @@ We welcome contributions to this project. Please submit a pull request or open a
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the BSD-3-Clause License - see the LICENSE file for details.
