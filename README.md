@@ -29,10 +29,13 @@ Clone this repository:
 git clone https://github.com/resonate/resonate-embeddings-cookbook.git
 cd embeddings-cookbook
 ```
+### Creating virtual environment(Optional)
 
-Install the necessary Python packages:
+Install the necessary Python packages in a virtual environment (helps in getting necessary package versions in place):
 
 ```bash
+python -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
