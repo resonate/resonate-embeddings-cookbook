@@ -88,11 +88,10 @@ val allAttributes = focalTaxonomy
 val broadcastMap = spark.sparkContext.broadcast(singleSelectColumnMap)
 // UDF to map svkeys to a single select attribute
 val mapSvkeyToAttr = udf((trueSvkeys: Seq[String], attr: String) => {
-  // Access the broadcasted map within the UDF's closure
+  // Iterate through svkeys and find the one that maps to the input attr
   trueSvkeys
-    .flatMap(svkey => broadcastMap.value.get(svkey))
-    .find(_ == attr)
-    .getOrElse(null)
+    .find(svkey => broadcastMap.value.get(svkey).contains(attr))
+    .orNull // Return null if no matching svkey is found
 })
 
 // Create DataFrame for single selects by adding a new column for each single select attribute
