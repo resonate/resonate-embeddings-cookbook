@@ -29,9 +29,9 @@ val splitSvkeys = udf((attributes: String) => attributes.split(",\\s*"))
 
 // Read in the data assets
 val dataAppend = spark.read
-  .option("header", "true")
   .option("inferSchema", "true")
-  .csv(params.dataAppendPath)
+  .csv(params.dataAppendPath).toDF("ID", "ATTRIBUTES")
+  .where(not(col("ID")) === "ID") // Remove header row if it exists
 
 val dataAppendTaxonomy = spark.read
   .option("header", "true")
