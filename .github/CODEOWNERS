@@ -1,0 +1,19 @@
+# CODEOWNERS
+# This file defines code ownership and review requirements for this repository.
+# For more information, see: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# All files require review from repository teams by default
+*                @resonate/data-science
+
+# All GitHub metadata and workflows
+.github/           @resonate/devops-shield
+.github/**         @resonate/devops-shield
+
+# Docker definitions
+Dockerfile         @resonate/devops-shield
+**/\[Dd\]ockerfile*  @resonate/devops-shield
+**/*.dockerfile    @resonate/devops-shield
+
+# Terraform & HCL
+**/*.tf            @resonate/devops-shield
+**/*.hcl           @resonate/devops-shield
